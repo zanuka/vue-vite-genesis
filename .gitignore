@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+dist
+*.local
+.idea
+*.iml
+cypress/videos
+cypress/screenshots
+coverage
+.vscode
+yarn-error.log
+.husky
