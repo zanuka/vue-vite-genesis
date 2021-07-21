@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      app header
+      header
     </div>
   </footer>
 </template>
