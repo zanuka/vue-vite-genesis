@@ -24,7 +24,5 @@ npm run test:e2e # headless
   - [vue-router](https://router.vuejs.org/) :: official Vue router
   - [axios](https://github.com/axios/axios) :: http client
   - [vite](https://github.com/vitejs/vite) :: no-bundler alternative to webpack
-  - [tailwindcss](https://tailwindcss.com/) :: utility-first CSS framework 
   - [autoprefixer](https://github.com/postcss/autoprefixer#readme) :: plugin to parse CSS and add vendor prefixes
   - [jest](https://jestjs.io/) :: testing framework
-  - [cypress](https://docs.cypress.io/guides/overview/why-cypress) :: next-gen testing tool

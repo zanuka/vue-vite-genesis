@@ -1,6 +1,6 @@
 {
   "name": "vue-vite-genesis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "zanuka",
   "scripts": {
@@ -33,7 +33,6 @@
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard-with-typescript": "^20.0.0",
-    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -52,8 +51,7 @@
     "vue-tsc": "^0.0.25"
   },
   "lint-staged": {
-    "src/**/*.{ts,vue}": "eslint --fix",
-    "cypress/**/*.js": "eslint --fix"
+    "src/**/*.{ts,vue}": "eslint --fix"
   },
   "jest": {
     "preset": "ts-jest",

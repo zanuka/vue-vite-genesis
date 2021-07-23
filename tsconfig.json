@@ -40,7 +40,7 @@
     "baseUrl": ".",
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
-    "types": ["vite/client", "@types/jest", "cypress"],                   /* Type declaration files to be included in compilation. */
+    "types": ["vite/client", "@types/jest"],                   /* Type declaration files to be included in compilation. */
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
