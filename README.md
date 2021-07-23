@@ -4,27 +4,25 @@ a vue project starter based off [vue3-realworld-example-app](https://github.com/
 ## setup
 
 ```shell script
-yarn install
+npm run install
 
 # Development
-yarn dev
+npm run dev
 
 # Build dist
-yarn build
+npm run build
 
 # Run unit tests
-yarn test:unit
+npm run test:unit
 
 # Run E2E tests
-yarn cypress open # with GUI
-yarn test:e2e # headless
+npm run cypress open # with GUI
+npm run test:e2e # headless
 ```
-## dependencies
-  - [vue](https://v3.vuejs.org/) :: v3
+## core dependencies
+  - [vue v3](https://v3.vuejs.org/) :: progressive JavaScript framework
   - [vue-router](https://router.vuejs.org/) :: official Vue router
+  - [axios](https://github.com/axios/axios) :: http client
   - [vite](https://github.com/vitejs/vite) :: no-bundler alternative to webpack
-  - [harlem](https://madewithvuejs.com/harlem) :: simple state management (1KB)
-  - [insane](https://www.npmjs.com/package/insane) :: html sanitizer
-  - [marked](https://github.com/markedjs/marked) :: markdown parser
+  - [autoprefixer](https://github.com/postcss/autoprefixer#readme) :: plugin to parse CSS and add vendor prefixes
   - [jest](https://jestjs.io/) :: testing framework
-  - [cypress](https://docs.cypress.io/guides/overview/why-cypress) :: next-gen testing tool

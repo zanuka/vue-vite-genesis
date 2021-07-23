@@ -1,5 +1,4 @@
 <template>
-  <AppHeader />
   <div>
     <h1>home</h1>
     <img
@@ -8,21 +7,16 @@
     >
     <HelloWorld msg="vue-vite-genesis :: Vue 3 + TypeScript + Vite" />
   </div>
-  <AppFooter />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import AppHeader from './components/AppHeader.vue'
 import HelloWorld from './components/HelloWorld.vue'
-import AppFooter from './components/AppFooter.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    AppHeader,
     HelloWorld,
-    AppFooter,
   },
 })
 </script>
