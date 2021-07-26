@@ -1,5 +1,5 @@
 # vue-vite-genesis
-super minimal vue project starter based off [vue3-realworld-example-app](https://github.com/mutoe/vue3-realworld-example-app) but with a simpler setup and some other mods
+super minimal vue project starter based off [vue3-realworld-example-app](https://github.com/mutoe/vue3-realworld-example-app) 
 
 ## setup
 
