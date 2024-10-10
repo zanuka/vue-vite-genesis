@@ -1,24 +1,42 @@
 # vue-vite-genesis
-super minimal vue project starter based off [vue3-realworld-example-app](https://github.com/mutoe/vue3-realworld-example-app) 
+my own spin on a minimal vue project starter based off [vue3-realworld-example-app](https://github.com/mutoe/vue3-realworld-example-app) 
 
 ## setup
 
 ```zsh
-npm run install
+```shell script
+pnpm install
 
-# local dev
-npm run dev
+# Development
+pnpm dev
 
-# dist build
-npm run build
+# Build dist
+pnpm build
 
-# lint
-npm run lint
+# Run unit tests
+pnpm test:unit
+pnpm test:unit:ci
 
-# tests
-npm run test
+# Run E2E tests
+pnpm test:e2e
+pnpm test:e2e:ci
 
 ```
+
+## main features
+- [x] [Vite](https://github.com/vitejs/vite)
+- [x] [Composition API](https://composition-api.vuejs.org/)
+- [x] [SFC \<script setup> sugar](https://v3.vuejs.org/api/sfc-script-setup.html)
+- [x] [Suspense](https://v3.vuejs.org/guide/component-dynamic-async.html#using-with-suspense) (Experimental)
+- [x] [Vue router](https://next.router.vuejs.org/)
+- [x] [Pinia](https://pinia.vuejs.org/) for state management
+- [x] [TypeScript](https://www.typescriptlang.org/) and [Vue tsc](https://github.com/johnsoncodehk/volar/tree/master/vue-language-tools/vue-tsc) for static analysis
+- [x] [swagger-typescript-api](https://github.com/acacode/swagger-typescript-api) for auto generate interface from swagger
+- [x] [ESLint](https://eslint.vuejs.org/) and [@mutoe/eslint-config](https://github.com/mutoe/eslint-config) for linting and styling (based on [@anthony/eslint-config](https://github.com/anthony/eslint-config))
+- [x] [Vitest](https://vitest.dev/) for unit testing
+- [x] [Testing Library](https://testing-library.com/docs/vue-testing-library/intro/) for component testing
+- [x] [Cypress](https://docs.cypress.io) for E2E testing
+- [x] [GitHub Actions](https://docs.github.com/en/actions) CI/CD
 ## dependencies
   - [vue](https://v3.vuejs.org/) (^3.3.4) :: Progressive JavaScript framework
   - [vue-router](https://router.vuejs.org/) (^4.2.2) :: Official Vue router

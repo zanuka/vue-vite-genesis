@@ -1,59 +1,47 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "useDefineForClassFields": true,
-    "allowJs": true,
-    "jsx": "preserve",
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
-    // "outFile": "./",                       /* Concatenate and emit output to single file. */
-    // "outDir": "./",                        /* Redirect output structure to the directory. */
-    // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
-    // "composite": true,                     /* Enable project compilation */
-    // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
-    // "removeComments": true,                /* Do not emit comments to output. */
-    // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
-    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
-    /* Additional Checks */
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
-    // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
-    /* Module Resolution Options */
-    // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
-    // "typeRoots": [],                       /* List of folders to include type definitions from. */
-    "types": ["vite/client", "@types/jest"],                   /* Type declaration files to be included in compilation. */
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
-    // "allowUmdGlobalAccess": true,          /* Allow accessing UMD globals from modules. */
-    /* Source Map Options */
-    // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
-    // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
-    // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
-    // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
-    /* Experimental Options */
-    // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
-    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-    /* Advanced Options */
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "src/**/*.d.ts",
-    "tests/**/*.tsx"
-    "tests/**/*.tsx",
-    "vite.config.ts"
-  ]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext", "dom"],
+		"noEmit": true,
+		"strict": true,
+		"allowJs": true,
+		"jsx": "preserve",
+		"noImplicitAny": false,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"noUnusedLocals": false,
+		"useDefineForClassFields": true,
+		"strictNullChecks": true,
+		"sourceMap": true,
+		"forceConsistentCasingInFileNames": true,
+		"typeRoots": [
+			"node_modules/@types",
+			"./cypress/support",
+			"./node_modules/vitest/types"
+		],
+		"types": ["node"]
+	},
+	"include": [
+		"src/*.ts",
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"src/**/*.html",
+		"cypress/**/*.cy.ts",
+		"cypress.d.ts",
+		"cypress/support/index.d.ts",
+		"test/vitest-setup.ts"
+	],
+	"exclude": ["node_modules"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+}

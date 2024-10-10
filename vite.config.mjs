@@ -1,9 +1,8 @@
 import vue from '@vitejs/plugin-vue';
-import * as path from 'path';
+import path from 'path';
 import { defineConfig } from 'vite';
 import svgLoader from 'vite-svg-loader';
 
-// https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [vue(), svgLoader()],
 	resolve: {
@@ -16,7 +15,7 @@ export default defineConfig({
 		host: '127.0.0.1'
 		// proxy: {
 		// 	'/api': {
-		// 		target: 'https://api-dev.xatp.io/v2',
+		// 		target: '',
 		// 		changeOrigin: true,
 		// 		rewrite: (path) => path.replace(/^\/api/, '')
 		// 	}
