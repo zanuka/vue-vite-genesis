@@ -1,13 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import './index.css';
 
-import { router } from './router'
+import { router } from './router';
 
-import registerGlobalComponents from './plugins/global-components'
+import registerGlobalComponents from './plugins/global-components';
 
-const app = createApp(App)
-app.use(router)
+const app = createApp(App);
+app.use(router);
 
-registerGlobalComponents(app)
+registerGlobalComponents(app);
 
-app.mount('#app')
+app.mount('#app');
