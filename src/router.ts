@@ -1,26 +1,29 @@
-import { createRouter, createWebHashHistory, RouteParams } from 'vue-router'
-import Home from './pages/Home.vue'
+import { createRouter, createWebHashHistory, RouteParams } from 'vue-router';
+import HomePage from './pages/HomePage.vue';
 
-export type AppRouteNames = 'home'
+export type AppRouteNames = 'Home';
 
 export const router = createRouter({
-  history: createWebHashHistory(),
-  routes: [
-    {
-      name: 'home',
-      path: '/',
-      component: Home,
-    },
-  ],
-})
+	history: createWebHashHistory(),
+	routes: [
+		{
+			name: 'Home',
+			path: '/',
+			component: HomePage
+		}
+	]
+});
 
-export function routerPush (name: AppRouteNames, params?: RouteParams): ReturnType<typeof router.push> {
-  if (params !== undefined) {
-    return router.push({
-      name,
-      params,
-    })
-  } else {
-    return router.push({ name })
-  }
+export function routerPush(
+	name: AppRouteNames,
+	params?: RouteParams
+): ReturnType<typeof router.push> {
+	if (params !== undefined) {
+		return router.push({
+			name,
+			params
+		});
+	} else {
+		return router.push({ name });
+	}
 }
