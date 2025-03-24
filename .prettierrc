@@ -6,7 +6,6 @@
 	"trailingComma": "none",
 	"singleQuote": true,
 	"bracketSpacing": true,
-	"dotNotation": false,
 	"arrowParens": "always",
 	"vueIndentScriptAndStyle": false
 }

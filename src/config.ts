@@ -6,7 +6,7 @@ export const CONFIG = {
 		VERSION: 'v1', // API version
 		DEFAULT_HEADERS: {
 			'Content-Type': 'application/json',
-			'Accept': 'application/json'
+			Accept: 'application/json'
 		},
 		RETRY_ATTEMPTS: 3
 	}
