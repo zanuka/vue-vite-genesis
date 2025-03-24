@@ -4,10 +4,12 @@ import HelloWorld from './components/HelloWorld.vue';
 
 <template>
 	<div>
-		<h1>home</h1>
-		<img alt="Vue logo" src="./assets/logo.png" />
+		<div class="flex justify-center items-center gap-8">
+			<img alt="Vue logo" src="./assets/vue-vite-icon.webp" class="w-32 h-32" />
+		</div>
+		<h1 class="text-center mt-2 mb-2">Vue Vite Genesis</h1>
 		<HelloWorld
-			msg="vue-vite-genesis :: Vue 3 + TypeScript + Tailwind + Vite"
+			msg="A simple starter project for Vue 3, TypeScript, Tailwind CSS, and Vite."
 		/>
 	</div>
 </template>
